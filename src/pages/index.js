@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby'
-import Footer from '../components/footer'
+
+import Layout from '../components/layout'
+
 const indexPage = () => {
+
     return (
-        <div>
+            <Layout>
             <h1>Hello</h1>
             <h2>My name is Sambulo Senda a fullstack developer based in Luton</h2>
             <p>Need a developer ? <Link to="/contact">Contact me</Link></p>
-            <Footer/>
-        </div>
+            </Layout>
+     
     )
 }
-export default indexPage;*
+export default indexPage

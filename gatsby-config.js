@@ -6,4 +6,21 @@
 
 module.exports = {
   /* Your site config here */
+    siteMetadata: {
+    title: `Full-Stack Bootcamp`,
+    siteUrl: `https://www.gatsbyjs.org`,
+    description: `Blazinhhg fast modern site generator for React`,
+    author: `Sambulo Senda`
+  },
+
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    }
+  ]
 }

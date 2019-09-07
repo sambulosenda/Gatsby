@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Footer from '../components/footer'
+
+import Layout from '../components/layout'
 
 const AboutPage = () => {
     return (
-        <div>
-            <h1>About Us</h1>
+     <Layout>
             <p> I am currently a developer at Whitbread</p>
             <p>Want to work with me <Link to="/contact">Contact</Link></p>
-            <Footer/>
-        </div>
+     </Layout>
+       
     )
 }
 export default AboutPage
